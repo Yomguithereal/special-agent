@@ -1,0 +1,29 @@
+{
+  "name": "special-agent",
+  "version": "0.0.1",
+  "description": "A provider of common user agents for stealthy crawling/scraping jobs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "json": "node ./scripts/tojson.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Yomguithereal/special-agent.git"
+  },
+  "keywords": [
+    "user-agent",
+    "ua",
+    "scraper",
+    "crawler"
+  ],
+  "author": "Yomguithereal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yomguithereal/special-agent/issues"
+  },
+  "homepage": "https://github.com/Yomguithereal/special-agent",
+  "devDependencies": {
+    "artoo-js": "^0.2.0"
+  }
+}

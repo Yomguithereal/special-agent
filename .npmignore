@@ -1,0 +1,6 @@
+.gitignore
+.npmignore
+node_modules
+test
+data/useragentswitcher.xml
+data/pretty_useragents.json
