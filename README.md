@@ -17,8 +17,7 @@ npm install special-agent
 `special-agent` lets you query its data through tags which are the same that the one produced by the [ua-parser-js](https://www.npmjs.com/package/ua-parser-js) lib plus the following ones:
 
 ```
-legacy modern desktop bot
-downloader feed-reader search library
+legacy modern desktop bot downloader feed-reader search library
 ```
 
 This is how you can use the library in node:
