@@ -4,6 +4,8 @@
 
 Thin wrapper around a compilation of common user agent strings that one can query easily through tags.
 
+This is particulary useful when you need to spoof your user agent when scraping/crawling...
+
 ## Installation
 
 You can install `special-agent` with npm:
