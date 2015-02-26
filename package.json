@@ -1,11 +1,12 @@
 {
   "name": "special-agent",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A provider of common user agents for stealthy crawling/scraping jobs.",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test",
-    "json": "node ./scripts/tojson.js"
+    "test": "mocha -R spec ./test.js",
+    "build": "node ./scripts/build.js",
+    "prepublish": "node ./scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,12 @@
     "url": "https://github.com/Yomguithereal/special-agent/issues"
   },
   "homepage": "https://github.com/Yomguithereal/special-agent",
+  "dependencies": {
+    "lodash": "^3.3.1"
+  },
   "devDependencies": {
-    "artoo-js": "^0.2.0"
+    "artoo-js": "0.3.1",
+    "mocha": "^2.1.0",
+    "ua-parser-js": "^0.7.3"
   }
 }
