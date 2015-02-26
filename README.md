@@ -41,8 +41,8 @@ specialAgent.find(tags, [nb]);
 // Example - get 5 user agents for 'windows'
 var uastrings = specialAgent.find('windows', 5);
 
-// Example - get every user agents for 'windows' and 'Chrome'
-var uastrings = specialAgent.find(['windows', 'Chrome']);
+// Example - get every user agents for 'windows' and 'chrome'
+var uastrings = specialAgent.find(['windows', 'chrome']);
 ```
 
 **#***.findOne*
