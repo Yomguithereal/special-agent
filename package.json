@@ -1,7 +1,7 @@
 {
   "name": "special-agent",
   "version": "0.1.0",
-  "description": "A provider of common user agents for stealthy crawling/scraping jobs.",
+  "description": "Thin wrapper around a compilation of common user agent strings that one can query easily through tags.",
   "main": "index.js",
   "scripts": {
     "test": "node ./scripts/build.js && mocha -R spec ./test.js",
