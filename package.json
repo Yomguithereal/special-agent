@@ -4,7 +4,7 @@
   "description": "A provider of common user agents for stealthy crawling/scraping jobs.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec ./test.js",
+    "test": "node ./scripts/build.js && mocha -R spec ./test.js",
     "build": "node ./scripts/build.js",
     "prepublish": "node ./scripts/build.js"
   },
