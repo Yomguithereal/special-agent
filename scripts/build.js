@@ -183,22 +183,22 @@ output.items.forEach(function(i) {
       cpu = parser.getCPU();
 
   if (browser.name)
-    i.tags.push(browser.name.trim());
+    i.tags.push(browser.name.toLowerCase().trim());
 
   if (device.type)
-    i.tags.push(device.type.trim());
+    i.tags.push(device.type.toLowerCase().trim());
 
   if (device.vendor)
-    i.tags.push(device.vendor.trim());
+    i.tags.push(device.vendor.toLowerCase().trim());
 
   if (engine.name)
-    i.tags.push(engine.name.trim());
+    i.tags.push(engine.name.toLowerCase().trim());
 
   if (os.name)
-    i.tags.push(os.name.trim());
+    i.tags.push(os.name.toLowerCase().trim());
 
   if (cpu.architecture)
-    i.tags.push(cpu.architecture.trim());
+    i.tags.push(cpu.architecture.toLowerCase().trim());
 
   i.tags = _.uniq(i.tags);
 });

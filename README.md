@@ -14,7 +14,7 @@ npm install special-agent
 
 ## Usage
 
-`special-agent` lets you query its data through tags which are the same that the one produced by the [ua-parser-js](https://www.npmjs.com/package/ua-parser-js) lib plus the following ones:
+`special-agent` lets you query its data through tags which are the same that the one produced by the [ua-parser-js](https://www.npmjs.com/package/ua-parser-js) lib (lowercased and trimmed) plus the following ones:
 
 ```
 legacy modern desktop bot downloader feed-reader search library
@@ -38,11 +38,11 @@ specialAgent.tags;
 specialAgent.find(tag, [nb]);
 specialAgent.find(tags, [nb]);
 
-// Example - get 5 user agents for 'Windows'
-var uastrings = specialAgent.find('Windows', 5);
+// Example - get 5 user agents for 'windows'
+var uastrings = specialAgent.find('windows', 5);
 
-// Example - get every user agents for 'Windows' and 'Chrome'
-var uastrings = specialAgent.find(['Windows', 'Chrome']);
+// Example - get every user agents for 'windows' and 'Chrome'
+var uastrings = specialAgent.find(['windows', 'Chrome']);
 ```
 
 **#***.findOne*
