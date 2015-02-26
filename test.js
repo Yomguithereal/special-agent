@@ -8,6 +8,11 @@ var assert = require('assert'),
 
 describe('Special Agent', function() {
 
+  it('should expose some properties.', function() {
+    assert(specialAgent.agents instanceof Array);
+    assert(specialAgent.tags instanceof Array);
+  });
+
   it('should be able to find several agents.', function() {
     assert(specialAgent.find(['Windows']).length > 1);
     assert(specialAgent.find(['Windows', 'modern']).length > 1);
@@ -28,5 +33,6 @@ describe('Special Agent', function() {
 
     assert(specialAgent.findRandom('Windows', 10).length === 10);
     assert(specialAgent.findRandom(['Windows'], 10).length === 10);
+    assert(typeof specialAgent.findOneRandom(['Windows']) === 'string');
   });
 });

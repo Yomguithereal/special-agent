@@ -56,19 +56,6 @@ var specialAgent = {
   }
 };
 
-/*
- * find
- * findAll
- * findByTitle
- * findByType
- * findOne
- * findRandom
- * findOneRandom
- * randomIterator
- * iterator
- * types
- */
-
 // Non writable properties
 Object.defineProperty(specialAgent, 'version', {
   value: '0.1.0'
